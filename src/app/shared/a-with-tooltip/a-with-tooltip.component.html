@@ -1,0 +1,5 @@
+<a [id]="anchorId" tabindex role="button" (click)="onClick($event)" #t="ngbTooltip" [ngbTooltip]="tooltipKey"
+  [placement]="placement" triggers="manual" container="body" (mouseenter)="showTooltip(t)" (mouseleave)="hideTooltip(t)">
+  <ng-content></ng-content>
+</a>
+
