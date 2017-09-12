@@ -1,3 +1,4 @@
+import { SampleComponent } from './sample/sample.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { LoadChildren, RouterModule, Routes } from '@angular/router';
@@ -8,7 +9,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'sample', loadChildren: './sample/sample.module#SampleModule'}
+      { path: 'sample', component: SampleComponent}
     ]
   }
 ];
