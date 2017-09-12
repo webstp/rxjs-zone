@@ -9,6 +9,6 @@ import { AWithTooltipComponent } from './a-with-tooltip/a-with-tooltip.component
     NgbModule
   ],
   declarations: [AWithTooltipComponent],
-  exports: [CommonModule, AWithTooltipComponent]
+  exports: [AWithTooltipComponent]
 })
 export class SharedModule { }
